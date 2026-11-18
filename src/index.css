@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: "IBM Plex Sans Arabic", system-ui, -apple-system, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #07090f;
+    background-image: radial-gradient(ellipse 80% 45% at 50% -10%, rgba(34, 211, 238, 0.11), transparent 70%);
+    color: #f1f5f9;
+    letter-spacing: 0.005em;
+  }
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+.tabular-nums-ltr {
+  font-variant-numeric: tabular-nums;
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+.neon-panel {
+  background-color: #0d1322;
+  border-color: rgba(34, 211, 238, 0.22);
+}
+
+.neon-glow-cyan {
+  box-shadow: 0 0 22px -6px rgba(34, 211, 238, 0.35);
+}
+
+.neon-glow-fuchsia {
+  box-shadow: 0 0 22px -6px rgba(232, 121, 249, 0.32);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

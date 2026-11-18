@@ -1,0 +1,6 @@
+{
+  "name": "SignBridge AI",
+  "description": "منصة وتطبيق ويب تقدمي (PWA) لترجمة لغة الإشارة المصرية إلى نص وصوت عربي مسموع مع تحليل تسلسل الحركات وتقدير عدم اليقين ولوحة تجارب ISEF.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
